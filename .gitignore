@@ -1,0 +1,32 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# VSCode settings (optional)
+.vscode/
+
+# PyInstaller build folders
+build/
+dist/
+*.spec
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files / temporary
+*.log
+*.tmp
+
+# Environment / secrets (if used)
+.env
+
+# IDEs
+.idea/
+*.iml
