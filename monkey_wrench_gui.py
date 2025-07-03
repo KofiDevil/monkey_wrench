@@ -142,7 +142,17 @@ class MonkeyWrenchApp:
             return
 
         for i in range(col_count):
-            headers.append(f"ExtraCol{i+1}")
+            new_col_name = f"ExtraCol{i+1}"
+
+            # Random insertion point for the column
+            insert_index = random.randint(0, len(headers))
+
+            # Insert header
+            headers.insert(insert_index, new_col_name)
+
+            # Insert empty string into each row at the same index
+            for row in rows:
+                row.insert(insert_index, "")
 
         duplicates = [random.choice(rows) for _ in range(count)]
         all_rows = rows + duplicates
