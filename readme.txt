@@ -2,7 +2,7 @@
 
 **Monkey Wrench** is a fun and quirky Python GUI tool that duplicates and mutates CSV files — perfect for testing deduplication tools. It features a cartoon UI, monkey sound effects, and even a little animation of a monkey throwing a wrench!
 
-![screenshot](preview.png) ./image.png
+![screenshot](image.png)
 
 ---
 
