@@ -21,7 +21,7 @@
 
 - Python 3.10–3.13
 
-## ▶️ To Run
+## ▶️ To Get EXE
 pyinstaller --noconfirm --onefile --windowed --icon=monkey.ico `
 --add-data "monkey.wav;." `
 --add-data "monkey_logo.png;." `
