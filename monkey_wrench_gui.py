@@ -216,7 +216,7 @@ class MonkeyWrenchApp:
             if use_google and sheet_id:
                 reader = self.load_google_sheet_by_id(sheet_id)
             else:
-                with open(self.file_path, newline='', encoding='utf-8') as f:
+                with open(self.file_path, newline='', encoding='utf-8') as f: # type: ignore
                     reader = list(csv.reader(f))
             headers = reader[0]
             rows = reader[1:]
@@ -248,7 +248,7 @@ class MonkeyWrenchApp:
             self.save_to_existing_sheet_by_id(sheet_id, "Sheet1", output_data)
             self.status_text.set("✔ Sheet updated!")
         else:
-            output_path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[["CSV files", "*.csv"]], initialfile="output.csv")
+            output_path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[["CSV files", "*.csv"]], initialfile="output.csv") # type: ignore
             if output_path:
                 with open(output_path, "w", newline='', encoding='utf-8') as f:
                     writer = csv.writer(f)
